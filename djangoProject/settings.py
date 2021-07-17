@@ -123,12 +123,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# There is a cold water in the cooler in my office
-#I drink coffee every morning in the office before I start working
-# There is lot of paper in my office
-#I worked enough in the office and i want to work online
-# I have had the intresting companions in the office
-
-# My education, my skills,
-# How you set a tasks to programmers?
-# Tell me more about project that i should work
