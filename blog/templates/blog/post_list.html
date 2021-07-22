@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Evgen`s blog</title>
-</head>
-<body>
-    <header>
-            <h1><a href="/">Evgen`s blog</a></h1>
-    </header>
-
+{% extends 'blog/base.html' %}
+{% block content %}
     {% for post in posts %}
-        <article>
+        <article class="post">
             <time>published: {{ post.published_date }}</time>
             <h2><a href="">{{ post.title}}</a></h2>
             <p class="article_body">{{ post.text|linebreaksbr }}</p>
         </article>
     {% endfor %}
-
-
-
-
-
-
-</body>
-</html>
+{% endblock %}
